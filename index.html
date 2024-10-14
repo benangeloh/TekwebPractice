@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="w-full text-white">
+        <nav class="w-full flex bg-[#2c3e4f] justify-between items-center py-6 px-12">
+            <h1 class="text-2xl font-bold items-center text-center">TEKNOLOGI WEBSITE</h1>
+            <ul class="flex text-md space-x-6 font-bold">
+                <li><a href="#portofolio" class="rounded-lg hover:bg-[#1ABC9C] p-2">PORTOFOLIO</a></li>
+                <li><a href="#about" class="rounded-lg hover:bg-[#1ABC9C] p-2">ABOUT</a></li>
+                <li><a href="#contact" class="rounded-lg hover:bg-[#1ABC9C] p-2">CONTACT</a></li>
+                <li><a href="#contact" class="rounded-lg hover:bg-[#1ABC9C] p-2">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="w-full bg-[#1ABC9C] text-white text-center pt-20 pb-16">
+            <div class="container mx-auto">
+            <img src="/images/man.png" alt="profile" class="w-40 mx-auto">
+
+            <h2 class="text-6xl font-bold my-5">UTS TEKNOLOGI WEBSITE</h2>
+            <div class="flex justify-center">
+                <span class="text-4xl font-bold">----- ★ -----</span>
+            </div>
+            <p class="text-md my-5">HTML - Tailwind - JavaScript</p>
+            </div>
+        </section>
+        
+        <section class="w-full text-center py-20" id="portofolio">
+            <div class="container mx-auto sm:grid-cols-2">
+            <h2 class="text-4xl bg-[#fff] text-[#2c3e4f] font-bold">PORTOFOLIO</h2>
+            <span class="text-4xl text-[#2c3e4f] font-bold py-4">----- ★ -----</span>
+
+            <div class="flex justify-center space-x-6 mt-12">
+            <img onclick="openModal('LOG CABIN', '/images/placehold.jpeg', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit facilis ex itaque nostrum quas dignissimos quo animi sint perspiciatis. Accusamus suscipit officiis ut exercitationem esse! Provident, numquam facere. Assumenda, dolores?')" src="/images/placehold.jpeg"  alt="image" class="w-[30%] rounded-lg transition-transform transition-duration-300 transform hover:scale-105">
+            <img onclick="openModal('PIECE OF CAKE', '/images/placehold.jpeg', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit facilis ex itaque nostrum quas dignissimos quo animi sint perspiciatis. Accusamus suscipit officiis ut exercitationem esse! Provident, numquam facere. Assumenda, dolores?')" src="/images/placehold.jpeg" alt="image" class="w-[30%] rounded-lg transition-transform transition-duration-200 transform hover:scale-105">
+            <img onclick="openModal('CIRCUS TENT', '/images/placehold.jpeg', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit facilis ex itaque nostrum quas dignissimos quo animi sint perspiciatis. Accusamus suscipit officiis ut exercitationem esse! Provident, numquam facere. Assumenda, dolores?')" src="/images/placehold.jpeg" alt="image" class="w-[30%] rounded-lg transition-transform transition-duration-200 transform hover:scale-105">
+            </div>
+
+            <div class="flex justify-center space-x-6 mt-12">
+            <img onclick="openModal('GAMING CONTROLLER', '/images/placehold.jpeg', 'Image 4')" src="/images/placehold.jpeg" alt="image" class="w-[30%] rounded-lg transition-transform transition-duration-200 transform hover:scale-105">
+            <img onclick="openModal('VAULT', '/images/placehold.jpeg', 'Image 5')" src="/images/placehold.jpeg" alt="image" class="w-[30%] rounded-lg transition-transform transition-duration-200 transform hover:scale-105">
+            <img onclick="openModal('SUBMARINE', '/images/placehold.jpeg', 'Image 6')" src="/images/placehold.jpeg" alt="image" class="w-[30%] rounded-lg transition-transform transition-duration-200 transform hover:scale-105">
+            </div>
+            </div>
+        </section>
+
+        <section class="w-full text-white bg-[#1ABC9C] text-center" id="about">
+            <div class="container mx-auto py-24">
+                <h2 class="text-4xl mx-auto font-bold justify-center items-center">ABOUT</h2>
+                <span class="text-4xl font-bold py-4">----- ★ -----</span>
+                <div class="mx-60 my-6 flex justify-center space-x-10">
+                    <div class="w-80 text-left">
+                        <p>Web Technology refers to the various tools and techniques that are utilized in the process of communication between different types of devices over the Internet. A web browser is used to access web pages.</p>
+                    </div>
+                    <div class="w-80 text-left">
+                        <p>Web browsers can be defined as programs that display text, data, pictures, animation, and video on the Internet. Hyperlinked resources on the World Wide Web can be accessed using software interfaces provided by Web browsers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#fff] text-[#2c3e4f] text-center items-center h-1/2" id="contact">
+            <div class="container mx-auto pt-20 py-10">
+                <div>
+                <h2 class="text-4xl font-bold">CONTACT ME</h2>
+                <span class="text-4xl font-bold py-4">----- ★ -----</span>
+                </div>
+
+                <div>
+                    <button class="my-12 rounded-lg text-sm justify-center bg-[#1ABC9C] text-[#fff] w-20 py-4 lg:grid-cols6 md:grid-cols-4 sm-grid-cols-2" onclick="openContactModal()">Contact!</button>
+                </div>
+
+                <div id="notesContainer" class="flex flex-wrap justify-center">
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-[#fff] w-full bg-[#2c3e4f] h-1/2 sm:grid-cols-1">
+            <div class="container mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-x-4 px-20">
+            <div class="justify-center text-center py-20">
+                <h3 class="text-2xl font-bold py-6">LOCATION</h3>
+                <p class="text-md">Petra Christian University</p>
+                <p class="text-md">Jl. Siwalankerto No. 121-131,</p>
+                <p class="text-md">Siwalankerto, Kec. Wonocolo, Surabaya,</p>
+                <p class="text-md">Jawa Timur 60236</p>
+            </div>
+            <div class="justify-center items-center text-center py-20">
+                <h3 class="text-2xl font-bold py-6">AROUND THE WEB</h3>
+                <a href="https://www.geeksforgeeks.org/web-technology/">
+                    <img class="w-12 mx-auto items-center" src="/images/man.png" alt="socials" target="_blank">
+                </a>
+            </div>
+            <div class="justify-center items-center text-center py-20">
+                <h3 class="text-2xl font-bold py-6">ABOUT WEB TECHNOLOGY</h3>
+                <p class="text-md w-80">The open web represents incredible opportunities for developers. To take full advantage of these technologies, you need to know how to use them. Here you'll find link to our
+                    <a class="underline text-[#1ABC9C]" target="_blank" href="https://www.geeksforgeeks.org/web-technology/">Web technology</a>
+                    documentation.
+                </p>
+            </div>
+        </div>
+        </footer>
+
+        <!-- image pop-up -->
+        <section id="imageModal" class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 justify-center items-center">
+            <div class="text-[#2c3e4f] bg-[#fff] rounded-lg m-auto max-w-2xl my-20 p-2 py-6 relative p-6 justify-center items-center">
+                <button class="absolute top-2 right-2 w-8 bg-black-800" onclick="closeModal()">
+                    <img src="/images/close.png" class="" alt="close button">
+                </button>
+
+                <h2 id="modalTitle" class="font-bold text-center text-3xl"></h2>
+                <div class="text-4xl font-bold p-4 mx-auto text-center">----- ★ -----</div>
+                <img id="modalImage" src="" class="pt-4 px-10 mx-auto w-lg rounded-lg" alt="">
+                <p id="modalImageAlt" class="text-center text-md py-6"></p>
+            </div>
+        </section>
+        
+        <!-- contact pop-up -->
+        <section id="contactModal" class="hidden fixed inset-0 bg-gray-800 bg-opacity-75 justify-center items-center">
+            <div class="container mx-auto top-20 bg-[#fff] rounded-lg max-w-2xl relative">
+                <div class="flex justify-between bg-[#1ABC9C] text-[2c3e4f] rounded-t-lg p-4 w-full">
+                    <h2 class="font-bold text-2xl">Contact!</h2>
+                    <button class="" onclick="closeContactModal()">
+                        <img class="w-6" src="/images/close.png" alt="close contact pop-up">
+                    </button>
+                </div>
+
+                <form action="submit" id="contactForm" class=" w-full text-[#2c3e4f] text-md">
+                    <div class="mx-4 mt-4 my-2">
+                        <label for="title" class="block text-md mb-2">Title</label>
+                        <input type="text" id="title" class="w-full px-2 py-1 text-md border-4 rounded-md hover:border-[#1ABC9C] border-opacity-50" placeholder="Message Title">
+                    </div>
+                    <div class="mx-4 mt-4 my-2">
+                        <label for="message" class="block mb-2">Message</label>
+                        <textarea id="message"  class="w-full px-2 py-1 text-md border-4 rounded-md hover:border-[#1ABC9C] border-opacity-50" placeholder="Message Notes"></textarea>
+                    </div>
+                    <div class="mx-4 my-4">
+                        <label for="color"></label>
+                        <select id="color" class="w-full px-2 py-1 text-md border-4 rounded-md hover:border-[#1ABC9C] border-opacity-50">
+                            <option value="yellow">Yellow</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                            <option value="red">Red</option>
+                            <option value="white">White</option>
+                        </select>
+                    </div>
+                    <div class="text-[#fff] text-md border-2 flex space-between-4 rounded-b-lg justify-right items-right">
+                        <div class="right-2 mx-4 my-4">
+                        <button type="button" class="rounded-lg p-3 mx-2 my-1 bg-[#2c3e4f] " onclick="closeContactModal()">Close</button>
+                        <button type="submit" class="rounded-lg p-3 mx-2 my-1 bg-[#1ABC9C]">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        <section id="editModal" class="hidden fixed inset-0 bg-gray-800 bg-opacity-75 justify-center items-center">
+            <div class="container mx-auto top-20 bg-[#fff] rounded-lg max-w-2xl relative">
+                <div class="flex justify-between bg-[#1ABC9C] text-[2c3e4f] rounded-t-lg p-4 w-full">
+                    <h2 class="font-bold text-2xl">Edit Message!</h2>
+                    <button class="" onclick="closeEditModal()">
+                        <img class="w-6" src="/images/close.png" alt="close edit pop-up">
+                    </button>
+                </div>
+        
+                <form action="submit" id="editForm" class="w-full text-[#2c3e4f] text-md">
+                    <div class="mx-4 mt-4 my-2">
+                        <label for="editTitle" class="block text-md mb-2">Title</label>
+                        <input type="text" id="editTitle" class="w-full px-2 py-1 text-md border-4 rounded-md hover:border-[#1ABC9C] border-opacity-50" placeholder="Message Title">
+                    </div>
+                    <div class="mx-4 mt-4 my-2">
+                        <label for="editMessage" class="block mb-2">Message</label>
+                        <textarea id="editMessage" class="w-full px-2 py-1 text-md border-4 rounded-md hover:border-[#1ABC9C] border-opacity-50" placeholder="Message Notes"></textarea>
+                    </div>
+                    <div class="mx-4 my-4">
+                        <label for="editColor"></label>
+                        <select id="editColor" class="w-full px-2 py-1 text-md border-4 rounded-md hover:border-[#1ABC9C] border-opacity-50">
+                            <option value="yellow">Yellow</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                            <option value="red">Red</option>
+                            <option value="white">White</option>
+                        </select>
+                    </div>
+                    <div class="text-[#fff] text-md border-2 flex space-between-4 rounded-b-lg justify-right items-right">
+                        <div class="right-2 mx-4 my-4">
+                            <button type="button" class="rounded-lg p-3 mx-2 my-1 bg-[#2c3e4f]" onclick="closeEditModal()">Close</button>
+                            <button type="submit" class="rounded-lg p-3 mx-2 my-1 bg-[#1ABC9C]">Edit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        let currentNote = null
+
+        function openModal(imageTitle, imageSource, imageAlt) {
+            document.getElementById("modalTitle").innerText = imageTitle
+            document.getElementById("modalImage").src = imageSource
+            document.getElementById("modalImageAlt").innerText = imageAlt
+
+            document.getElementById("imageModal").classList.remove("hidden")
+            console.log('Contact modal triggered');
+        }
+
+        function closeModal() {
+            document.getElementById("imageModal").classList.add("hidden")
+            console.log('Contact modal triggered');
+        }
+
+        function openContactModal()  {
+            document.getElementById("contactModal").classList.remove("hidden")
+        }
+
+        function closeContactModal() {
+            document.getElementById("contactModal").classList.add("hidden")
+        }
+
+        function editNote(editedNote) {
+            const title =  editedNote.querySelector("h3").innerText
+            const message = editedNote.querySelector("p").innerText
+            const color = editedNote.dataset.color
+
+            document.getElementById('title').value = title;
+            document.getElementById('message').value = message;
+            document.getElementById('color').value = color;
+
+            openContactModal()
+        }
+
+        document.getElementById("contactForm").addEventListener('submit', function(e) {
+            e.preventDefault()
+
+            const title = document.getElementById("title").value
+            const message = document.getElementById("message").value
+            const color = document.getElementById("color").value
+
+            const notesContainer = document.getElementById("notesContainer")
+            const newNote = document.createElement("div")
+
+            newNote.classList.add('p-4', 'rounded-lg', 'mx-2', 'my-2', 'text-[#fff]')
+            newNote.classList.add(`bg-${color}-800`);
+            newNote.setAttribute('onclick', 'editNote(this)')
+            newNote.setAttribute('data-color', color);
+
+            newNote.innerHTML = `
+                <h3 class='text-md font-bold'>${title}</h3>
+                <hr class="w-48 h-0.5 my-1 bg-gray-100 border-0 rounded md:my-1 dark:bg-gray-700">
+                <p>${message}</p>
+            `
+
+            notesContainer.append(newNote)
+        
+            closeContactModal()
+        }) 
+
+        function editNote(editedNote) {
+        const title = editedNote.querySelector("h3").innerText;
+        const message = editedNote.querySelector("p").innerText;
+        const color = editedNote.dataset.color;
+
+        document.getElementById('editTitle').value = title;
+        document.getElementById('editMessage').value = message;
+        document.getElementById('editColor').value = color;
+
+        currentNote = editedNote;
+        openEditModal();
+    }
+
+    function openEditModal() {
+        document.getElementById("editModal").classList.remove("hidden");
+    }
+
+    function closeEditModal() {
+        document.getElementById("editModal").classList.add("hidden");
+        resetEditForm();
+    }
+
+    function resetEditForm() {
+        document.getElementById("editForm").reset();
+        currentNote = null;
+    }
+
+    document.getElementById("editForm").addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const title = document.getElementById("editTitle").value;
+        const message = document.getElementById("editMessage").value;
+        const color = document.getElementById("editColor").value;
+
+        if (currentNote) {
+            currentNote.querySelector('h3').innerText = title;
+            currentNote.querySelector('p').innerText = message;
+            currentNote.dataset.color = color;
+
+            currentNote.className = `p-4 rounded-lg mx-2 my-2 text-[#fff] bg-${color}-800`;
+        }
+
+        closeEditModal();
+    });
+    </script>
+</body>
+</html>
